@@ -30,15 +30,11 @@
 # Array to hold 'featured numbers'
 #
 # ALGORITHM 
-# 0) initialize an empty array for the 'featured numbers'
-# 1) generate a range based on the argument (1..((arg*1.25).round))
-# 2) call #select on the range and supply a code block that will 
-#    produce multiples of seven
-# 3) same as above but select for odd numbers
-# 4) same as above but select for numbers with no duplicate digits
-# 5) save the results of step 5 to the array from step 0
-# 6) find the element in the array which is the next 'featured number' 
-#    greater than the argument
+# 1) return error message for any argument integer greater than 10 digits long
+# 2) loop
+#     3) increment by 1
+#     4) return if value is odd, divisible by 7, and has no duplicate digits
+#     5) break when value exceeds 10 digits in length
 #
 # CODE
 require 'test/unit'
